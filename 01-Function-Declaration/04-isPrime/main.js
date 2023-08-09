@@ -32,16 +32,16 @@
 // 3-OUTPUT ? => boolean true,false
 // number => bool
 
-function checkPrime(num) {
-    let isPrime = true;
-    for (let d = 2; d < num; d++) {
-        if (num % d == 0) {
-            isPrime = false;
-            break;
-        }
-    }
-    if (isPrime) console.log(num);
-}
+// function checkPrime(num) {
+//     let isPrime = true;
+//     for (let d = 2; d < num; d++) {
+//         if (num % d == 0) {
+//             isPrime = false;
+//             break;
+//         }
+//     }
+//     if (isPrime) console.log(num);
+// }
 
 // checkPrime(7);
 // checkPrime(13);
@@ -49,12 +49,13 @@ function checkPrime(num) {
 // checkPrime(63);
 // checkPrime(83);
 
-function printPrime(limit) {
-    for (let n = 2; n <= limit; n++) {
-        checkPrime(n);
-    }
-}
-printPrime(71);
+// function printPrime(limit) {
+//     for (let n = 2; n <= limit; n++) {
+//         // n =2,3,4,5,......,limit
+//         checkPrime(n);
+//     }
+// }
+// printPrime(71);
 // checkPrime(2);
 // checkPrime(3);
 // checkPrime(4);
@@ -72,3 +73,54 @@ printPrime(71);
 // - simple ideas => one idea
 // - hiding complexity
 // - simple interaction
+
+function addTwo(n) {
+    let result = n + 2;
+    console.log('Before Return');
+    return result;
+    console.log('End calc');
+}
+
+let result = addTwo(5);
+console.log(result);
+
+// number => bool
+
+// function isPrime(num) {
+//     for (let d = 2; d < num; d++) {
+//         // console.log(d);
+//         if (num % d == 0) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// function printPrime(limit) {
+//     for (let n = 2; n <= limit; n++) {
+//         if (isPrime(n)) {
+//             console.log(n);
+//         }
+//     }
+// }
+
+// printPrime(50);
+
+function getLongText() {
+    return;
+    ('Lorem Ipsum is simply dummy text of the printing and typesetting industry.');
+}
+
+console.log(getLongText());
+
+let count = 0;
+function addThree(x) {
+    count++;
+    return x + 3;
+}
+
+addThree(5);
+addThree(7);
+
+console.log(count);
