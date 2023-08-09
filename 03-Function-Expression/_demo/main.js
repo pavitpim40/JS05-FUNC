@@ -47,7 +47,8 @@ let z = function (x) {
     return x ** 2;
 };
 // A: Shortest
-let a = x => x + 2;
+let a = (x) => x + 2;
+
 let b = (x, y) => x + y;
 
 // B: Bracket
@@ -57,6 +58,6 @@ let c = (x, y) => {
 };
 
 // console.log(z(3));
-console.log(a(5))
+console.log(a(5));
 // console.log(b(3, 5));
 // console.log(c(3, 5));
